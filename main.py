@@ -44,4 +44,4 @@ st.plotly_chart(fig2)
 # Deployment Message
 st.header("Deployment")
 st.write("This app is deployed on Streamlit Cloud.")
-st.markdown("[GitHub Repository](https://github.com/your-repo)")
+st.markdown("[GitHub Repository](https://github.com/MuhammadRivaldiAsyhari/streamlit_projek)")
