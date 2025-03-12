@@ -1,11 +1,13 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
 
 # Load Dataset
 st.title("Streamlit Assessment Project - Bank Churn Data")
 
-data_path = "C:\\Users\\user\\OneDrive\\Dokumen\\GitHub\\clone\\streamlit_inceptionv3\\bank_churn_data.csv"
+#data_path = "C:\\Users\\user\\OneDrive\\Dokumen\\GitHub\\clone\\streamlit_inceptionv3\\bank_churn_data.csv"
+data_path = "bank_churn_data.csv" if os.path.exists("bank_churn_data.csv") else "/mnt/data/bank_churn_data.csv"
 df = pd.read_csv(data_path)
 df.columns = df.columns.str.strip()  # Remove any leading/trailing spaces in column names
 
