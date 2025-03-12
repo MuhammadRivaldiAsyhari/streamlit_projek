@@ -15,7 +15,7 @@ df.columns = df.columns.str.strip()  # Remove any leading/trailing spaces in col
 st.header("Dataset Overview")
 st.write(df.head())
 st.write("Shape of the dataset:", df.shape)
-st.write("Columns in dataset:", df.columns.tolist())
+#st.write("Columns in dataset:", df.columns.tolist())
 
 # Basic Components
 st.header("Basic Components")
